@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import CourseNavbar from '../components/CourseNavbar'
 import Dummy from '../images/dummy.jpg'
 import { Link } from 'react-router-dom';
-import CourseFooter from '../components/CourseFooter';
 
 const Course = () => {
   const [video, setVideo] = useState('12TuC1sUXxM');
+  // eslint-disable-next-line
   const [courses, setCourses] = useState([
     {
       id: 1,
@@ -21,6 +21,7 @@ const Course = () => {
       video: 'fqyoMgVuu5s'
     }
   ]);
+  // eslint-disable-next-line
   const [benefits, setBenefits] = useState([
     {
       id: 1,
@@ -45,11 +46,11 @@ const Course = () => {
     },
   ]);
   return (
-    <div>
+    <div className='md:h-screen overflow-hidden'>
       <CourseNavbar />
-      <div className='container mx-auto px-4 md:h-screen pt-10 pb-20'>
+      <div className='container mx-auto px-4 py-5'>
         <div className='flex flex-col md:flex-row justify-between gap-5'>
-          <div className='order-3 md:order-none basis-1/6 text-gray-900'>
+          <div className='order-3 md:order-none basis-1/6 text-gray-900 h-screen overflow-y-auto'>
             <h1 className='text-3xl font-bold'>
               <Link className='flex items-center gap-3'><span className='font-bold text-2xl'>Explore</span></Link>
             </h1>
@@ -60,7 +61,7 @@ const Course = () => {
               <li>Animasi</li>
             </ul>
           </div>
-          <div className='order-2 md:order-none basis-2/6 bg-slate-50 rounded-3xl py-6 px-6'>
+          <div className='order-2 md:order-none basis-2/6 h-screen bg-slate-50 rounded-3xl py-6 px-6 overflow-y-auto'>
             <ul className='space-y-1'>
               {
                 courses.map((course, i) => {
@@ -79,20 +80,20 @@ const Course = () => {
               }
             </ul>
           </div>
-          <div className='order-1 md:order-none basis-3/6 rounded-3xl space-y-5'>
-            <iframe className='w-full h-80 rounded-3xl' src={`https://www.youtube.com/embed/${video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div className='order-1 md:order-none basis-3/6 rounded-3xl space-y-5 h-screen overflow-hidden'>
+            <iframe className='w-full h-52 md:h-80 rounded-3xl' src={`https://www.youtube.com/embed/${video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div className='space-y-4'>
               <h1 className='text-gray-900 font-bold text-2xl'>Graphic Design Spesialization</h1>
               <p className='text-gray-600 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu libero facilisis, commodo elit sed, dapibus dolor. Donec non efficitur dui, sit amet vestibulum est. Curabitur massa augue, luctus vitae finibus id, tempor at lacus.</p>
               <div className='flex items-center gap-2'>
-                <img src={Dummy} className="rounded-full" style={{ width: 40, height: 40 }} />
+                <img src={Dummy} alt='' className="rounded-full" style={{ width: 40, height: 40 }} />
                 <div>
                   <h4 className='text-sm text-gray-900 font-medium'>Lerian Febriana, A.Md.Kom</h4>
                   <p className='text-xs text-gray-500'>Software Engineer</p>
                 </div>
               </div>
               <hr />
-              <div className='flex flex-wrap'>
+              {/* <div className='flex flex-wrap'>
                 {
                   benefits.map((benefit, i) => {
                     return (
@@ -108,7 +109,7 @@ const Course = () => {
                     )
                   })
                 }
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
