@@ -17,5 +17,17 @@
     "video": "fqyoMgVuu5s",
     "karyawan": false,
     "reguler": true
+  }, {
+    "id": 4,
+    "name": "Penjelasan singkat TailwindCSS",
+    "video": "HRrMCxXRUEk",
+    "karyawan": true,
+    "reguler": true
+  }, {
+    "id": 5,
+    "name": "Membuat Navbar",
+    "video": "uq2ed4xg73w",
+    "karyawan": true,
+    "reguler": true
   }
 ]
