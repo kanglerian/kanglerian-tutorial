@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "name": "[Navbar] Button Login",
+    "images": [
+      {
+        "content": "https://i.ibb.co/txT4GZV/navbar.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [
+      {
+        "rule": "<div> tampil"
+      }, {
+        "rule": "<div> Tidak ada margin"
+      }
+    ],
+    "rulesMobile": [
+      {
+        "rule": "<div> tidak tampil"
+      }, {
+        "rule": "<div> atur margin top sebesar 5 point"
+      }
+    ],
+    "rulesBoth": [
+      {
+        "rule": "<div> background white"
+      }, {
+        "rule": "<div> rounded large"
+      }, {
+        "rule": "<div> border"
+      }, {
+        "rule": "<div> padding vertikal 2"
+      }, {
+        "rule": "<div> padding horizontal 4"
+      }, {
+        "rule": "<a> padding vertikal 2"
+      }, {
+        "rule": "<a> padding horizontal 4"
+      }, {
+        "rule": "<a> warna teks Login sky 700"
+      }, {
+        "rule": "<a> Href ke index.html"
+      }
+    ]
+  }, {
+    "id": 2,
+    "name": "[Navbar] Logo Kemensos RI",
+    "images": [
+      {
+        "content": "https://i.ibb.co/txT4GZV/navbar.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<img> tinggi gambar 16"
+      }, {
+        "rule": "<a> href ke index.html"
+      }
+    ]
+  },{
+    "id": 3,
+    "name": "[Navbar] Button Toggle Navbar",
+    "images": [
+      {
+        "content": "https://i.ibb.co/txT4GZV/navbar.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<button> Desktop tidak tampil"
+      }, {
+        "rule": "<button> Background gray 50"
+      }, {
+        "rule": "<button> Focus ring 2 dengan warna gray 200"
+      }, {
+        "rule": "<button> Padding setiap sisi 4 point"
+      }, {
+        "rule": "<button> Warna icon gray 600"
+      }, {
+        "rule": "<button> Tambahkan rounded large"
+      }
+    ]
+  },{
+    "id": 4,
+    "name": "[Navbar] Menu",
+    "images": [
+      {
+        "content": "https://i.ibb.co/txT4GZV/navbar.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [
+      {
+        "rule": "<div> tampil"
+      },{
+        "rule": "<div> atur lebar menjadi auto"
+      },{
+        "rule": "<ul> menu kesamping menggunakan flex row"
+      },{
+        "rule": "<ul> background transparan"
+      },{
+        "rule": "<ul> tidak ada border"
+      },{
+        "rule": "<ul> jarak antar menu 8 point ke samping"
+      },{
+        "rule": "<li> tidak ada padding"
+      },{
+        "rule": "<li> ketika aktif font bold teks cyan 600 background transparant"
+      }
+    ],
+    "rulesMobile": [
+      {
+        "rule": "<div> tidak tampil"
+      },{
+        "rule": "<div> atur lebar menjadi full"
+      },{
+        "rule": "<ul> menu kebawah dengan flex col"
+      },{
+        "rule": "<ul> background putih"
+      },{
+        "rule": "<ul> terdapat border"
+      },{
+        "rule": "<ul> tidak ada jarak"
+      },{
+        "rule": "<li> padding horizontal 4 point"
+      },{
+        "rule": "<li> padding vertikal 2 point"
+      },{
+        "rule": "<li> ketika aktif background blue 500 text white dan font bold"
+      }
+    ],
+    "rulesBoth": [
+      {
+        "rule": "<ul> beri padding di tiap sisi sebanyak 3 point"
+      },{
+        "rule": "<ul> beri rounded large"
+      }
+    ]
+  }
+]

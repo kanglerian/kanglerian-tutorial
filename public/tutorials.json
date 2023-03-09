@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Penjelasan ROAD MAP",
+    "video": "NRQKZA-JkSI",
+    "karyawan": true,
+    "reguler": true
+  }, {
+    "id": 2,
+    "name": "Penjelasan JSON Server",
+    "video": "rPEOw9_nrjk",
+    "karyawan": true,
+    "reguler": true
+  }, {
+    "id": 3,
+    "name": "Penjelasan Figma Dasar",
+    "video": "fqyoMgVuu5s",
+    "karyawan": false,
+    "reguler": true
+  }
+]

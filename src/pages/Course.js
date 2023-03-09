@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CourseNavbar from '../components/CourseNavbar'
 import Photo from '../images/lerian.jpg'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Course = () => {
   const [video, setVideo] = useState({
@@ -10,49 +11,24 @@ const Course = () => {
     video: '12TuC1sUXxM',
     desc: 'Lorem Ipsum dolor sit amet.'
   });
-  // eslint-disable-next-line
-  const [courses, setCourses] = useState([
-    {
-      id: 1,
-      name: 'Penjelasan ROAD MAP',
-      video: 'NRQKZA-JkSI',
-      desc: 'Lorem Ipsum dolor sit amet.'
-    }, {
-      id: 2,
-      name: 'Penjelasan JSON Server',
-      video: 'rPEOw9_nrjk',
-      desc: 'Lorem Ipsum dolor sit amet.'
-    }, {
-      id: 3,
-      name: 'Penjelasan Figma Dasar',
-      video: 'fqyoMgVuu5s',
-      desc: 'Lorem Ipsum dolor sit amet.'
-    }
-  ]);
-  // eslint-disable-next-line
-  const [benefits, setBenefits] = useState([
-    {
-      id: 1,
-      icon: 'fa-solid fa-earth-asia',
-      name: '100% Online Courses',
-      desc: 'Start now & learn at your own schedules'
-    }, {
-      id: 2,
-      icon: 'fa-regular fa-clock',
-      name: '6 Months to Complete',
-      desc: 'Suggested 4 hours/week'
-    }, {
-      id: 3,
-      icon: 'fa-regular fa-calendar',
-      name: 'Flexible Schedule',
-      desc: 'Set and maintain flexible deadlines'
-    }, {
-      id: 4,
-      icon: 'fa-regular fa-comment-dots',
-      name: 'Indonesia',
-      desc: 'Subtitles: Indonesia & English'
-    },
-  ]);
+
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    axios.get('/tutorials.json')
+      .then((res) => setCourses(res.data))
+      .catch(err => console.log(err));
+  });
+
+  const changeVideo = (course, i) => {
+    setVideo({
+      id: i + 1,
+      name: course.name,
+      video: course.video,
+      desc: course.desc
+    });
+  }
+
   return (
     <div className='md:h-screen overflow-hidden dark:bg-slate-800'>
       <CourseNavbar />
@@ -74,12 +50,20 @@ const Course = () => {
               {
                 courses.map((course, i) => {
                   return (
-                    <li key={i} onClick={() => setVideo({ id: i + 1, name: course.name, video: course.video, desc: course.desc })}>
+                    <li key={i} onClick={() => changeVideo(course, i)}>
                       <div className='flex items-center p-2 transition ease-in-out border border-transparent duration-200 hover:border-slate-200 hover:dark:border-slate-600 hover:translate-x-2 rounded-xl gap-5' role='button'>
                         <span className='flex items-center justify-center bg-orange-400 w-24 h-14 rounded-xl text-white'><i class="transition ease-in-out duration-700 hover:rotate-180 fa-solid fa-ellipsis fa-2x"></i></span>
                         <div className='space-y-1'>
-                          <h3 className='text-slate-800 dark:text-slate-100 font-medium text-sm'>{course.name}</h3>
-                          <p className='text-xs text-slate-600 dark:text-slate-400'>{course.desc}</p>
+                          <h3 className='text-slate-800 dark:text-slate-100 font-medium text-sm'>{course.name}</h3><div className='space-x-1'>
+                            {
+                              course.karyawan &&
+                              <span className='bg-red-500 text-xs text-white px-3 py-1 rounded'>Karyawan</span>
+                            }
+                            {
+                              course.reguler &&
+                              <span className='bg-emerald-500 text-xs text-white px-3 py-1 rounded'>Reguler</span>
+                            }
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -100,23 +84,6 @@ const Course = () => {
                   <p className='text-xs text-slate-600 dark:text-slate-400'>Software Engineer</p>
                 </div>
               </div>
-              {/* <div className='flex flex-wrap'>
-                {
-                  benefits.map((benefit, i) => {
-                    return (
-                      <div className='basis-1/2 flex items-center gap-2 mb-5' key={i}>
-                        <span className="flex items-center justify-center bg-amber-200 rounded-full" style={{ width: 40, height: 40 }}>
-                          <i className={`${benefit.icon}`}></i>
-                        </span>
-                        <div>
-                          <h4 className='text-sm text-gray-900 font-medium'>{benefit.name}</h4>
-                          <p className='text-[11px] text-gray-500'>{benefit.desc}</p>
-                        </div>
-                      </div>
-                    )
-                  })
-                }
-              </div> */}
             </div>
           </div>
         </div>
