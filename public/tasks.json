@@ -12,39 +12,50 @@
     "rulesDesktop": [
       {
         "rule": "<div> tampil"
-      }, {
+      },
+      {
         "rule": "<div> Tidak ada margin"
       }
     ],
     "rulesMobile": [
       {
         "rule": "<div> tidak tampil"
-      }, {
+      },
+      {
         "rule": "<div> atur margin top sebesar 5 point"
       }
     ],
     "rulesBoth": [
       {
         "rule": "<div> background white"
-      }, {
+      },
+      {
         "rule": "<div> rounded large"
-      }, {
+      },
+      {
         "rule": "<div> border"
-      }, {
+      },
+      {
         "rule": "<div> padding vertikal 2"
-      }, {
+      },
+      {
         "rule": "<div> padding horizontal 4"
-      }, {
+      },
+      {
         "rule": "<a> padding vertikal 2"
-      }, {
+      },
+      {
         "rule": "<a> padding horizontal 4"
-      }, {
+      },
+      {
         "rule": "<a> warna teks Login sky 700"
-      }, {
+      },
+      {
         "rule": "<a> Href ke index.html"
       }
     ]
-  }, {
+  },
+  {
     "id": 2,
     "name": "[Navbar] Logo Kemensos RI",
     "images": [
@@ -59,11 +70,13 @@
     "rulesBoth": [
       {
         "rule": "<img> tinggi gambar 16"
-      }, {
+      },
+      {
         "rule": "<a> href ke index.html"
       }
     ]
-  },{
+  },
+  {
     "id": 3,
     "name": "[Navbar] Button Toggle Navbar",
     "images": [
@@ -78,19 +91,25 @@
     "rulesBoth": [
       {
         "rule": "<button> Desktop tidak tampil"
-      }, {
+      },
+      {
         "rule": "<button> Background gray 50"
-      }, {
+      },
+      {
         "rule": "<button> Focus ring 2 dengan warna gray 200"
-      }, {
+      },
+      {
         "rule": "<button> Padding setiap sisi 4 point"
-      }, {
+      },
+      {
         "rule": "<button> Warna icon gray 600"
-      }, {
+      },
+      {
         "rule": "<button> Tambahkan rounded large"
       }
     ]
-  },{
+  },
+  {
     "id": 4,
     "name": "[Navbar] Menu",
     "images": [
@@ -103,48 +122,549 @@
     "rulesDesktop": [
       {
         "rule": "<div> tampil"
-      },{
+      },
+      {
         "rule": "<div> atur lebar menjadi auto"
-      },{
+      },
+      {
         "rule": "<ul> menu kesamping menggunakan flex row"
-      },{
+      },
+      {
         "rule": "<ul> background transparan"
-      },{
+      },
+      {
         "rule": "<ul> tidak ada border"
-      },{
+      },
+      {
         "rule": "<ul> jarak antar menu 8 point ke samping"
-      },{
+      },
+      {
         "rule": "<li> tidak ada padding"
-      },{
+      },
+      {
         "rule": "<li> ketika aktif font bold teks cyan 600 background transparant"
       }
     ],
     "rulesMobile": [
       {
         "rule": "<div> tidak tampil"
-      },{
+      },
+      {
         "rule": "<div> atur lebar menjadi full"
-      },{
+      },
+      {
         "rule": "<ul> menu kebawah dengan flex col"
-      },{
+      },
+      {
         "rule": "<ul> background putih"
-      },{
+      },
+      {
         "rule": "<ul> terdapat border"
-      },{
+      },
+      {
         "rule": "<ul> tidak ada jarak"
-      },{
+      },
+      {
         "rule": "<li> padding horizontal 4 point"
-      },{
+      },
+      {
         "rule": "<li> padding vertikal 2 point"
-      },{
+      },
+      {
         "rule": "<li> ketika aktif background blue 500 text white dan font bold"
       }
     ],
     "rulesBoth": [
       {
         "rule": "<ul> beri padding di tiap sisi sebanyak 3 point"
-      },{
+      },
+      {
         "rule": "<ul> beri rounded large"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "[Header] Container",
+    "images": [
+      {
+        "content": "https://i.ibb.co/47hpF29/header.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<header> set container dan atur menjadi di tengah dengan mx-auto"
+      },
+      {
+        "rule": "<header> beri padding horizontal 4 point dan vertikal 10 point"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "[Header] Informasi",
+    "images": [
+      {
+        "content": "https://i.ibb.co/47hpF29/header.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [
+      {
+        "rule": "<div> atur lebar menjadi 3/5 atur space vertikal 5"
+      },
+      {
+        "rule": "<h1> atur ukuran teks 6xl"
+      },
+      {
+        "rule": "<p> atur ukuran teks xl"
+      }
+    ],
+    "rulesMobile": [
+      {
+        "rule": "<div> atur lebar menjadi full space vertikal 5"
+      },
+      {
+        "rule": "<h1> atur ukuran teks 5xl"
+      },
+      {
+        "rule": "<p> atur ukuran teks base"
+      }
+    ],
+    "rulesBoth": [
+      {
+        "rule": "<h1> atur font bold dan warna teks gray 800"
+      },
+      {
+        "rule": "<h1> atur font bold dan warna teks gray 800"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "[Header] Moto Kerja",
+    "images": [
+      {
+        "content": "https://i.ibb.co/47hpF29/header.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<div> atur lebar 1/2"
+      },
+      {
+        "rule": "<div> berikan margin bottom sebanyak 3 point"
+      },
+      {
+        "rule": "<div> berikan warna teks gray 700"
+      },
+      {
+        "rule": "<span> berikan warna icon text emerald 700"
+      },
+      {
+        "rule": "<p> berikan ukuran text sm dan font bold"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "[Header] Cek Status Bantuan Sosial",
+    "images": [
+      {
+        "content": "https://i.ibb.co/47hpF29/header.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [
+      {
+        "rule": "<div> atur lebar menjadi 2/5"
+      }
+    ],
+    "rulesMobile": [
+      {
+        "rule": "<div> atur lebar menjadi full"
+      }
+    ],
+    "rulesBoth": [
+      {
+        "rule": "<div> tambahkan shadow extra large"
+      },
+      {
+        "rule": "<div> tambahkan border dan beri warna gray 100"
+      },
+      {
+        "rule": "<div> tambahkan rounded extra large"
+      },
+      {
+        "rule": "<div> padding tiap sisi 5 point"
+      },
+      {
+        "rule": "<div> berikan background white"
+      },
+      {
+        "rule": "<div> atur text agar ke tengah"
+      },
+      {
+        "rule": "<h4> atur font bold dengan warna text gray 800"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "[Header] Form Input Cek Bansos",
+    "images": [
+      {
+        "content": "https://i.ibb.co/47hpF29/header.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [
+      {
+        "rule": "<input> atur lebar sebanyak 3/4"
+      },
+      {
+        "rule": "<button> atur lebar sebanyak 3/4"
+      }
+    ],
+    "rulesMobile": [
+      {
+        "rule": "<input> atur lebar sebanyak full"
+      },
+      {
+        "rule": "<button> atur lebar sebanyak full"
+      }
+    ],
+    "rulesBoth": [
+      {
+        "rule": "<label> atur text gray 600 dengan ukuran text sm"
+      },
+      {
+        "rule": "<input> atur padding horizontal sebanyak 4 point"
+      },
+      {
+        "rule": "<input> atur padding vertikal sebanyak 2 point"
+      },
+      {
+        "rule": "<input> atur background gray 50"
+      },
+      {
+        "rule": "<input> Tambahkan border dan beri warna border gray 200"
+      },
+      {
+        "rule": "<input> berikan warna teks gray 800"
+      },
+      {
+        "rule": "<input> atur rounded large"
+      },
+      {
+        "rule": "<button> atur padding horizontal sebanyak 4 point"
+      },
+      {
+        "rule": "<button> atur padding vertikal sebanyak 2 point"
+      },
+      {
+        "rule": "<button> atur background emerald 500 dan hover 600"
+      },
+      {
+        "rule": "<button> tambahkan teks white"
+      },
+      {
+        "rule": "<button> tambahkan rounded large"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "[Header] Kredit di Form Input Bansos",
+    "images": [
+      {
+        "content": "https://i.ibb.co/47hpF29/header.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<div> atur ukuran teks xs dan warna teks gray 500"
+      },
+      {
+        "rule": "<p> atur text left"
+      },
+      {
+        "rule": "<a> atur menjadi font bold"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "[Banner] Informasi berupa gambar",
+    "images": [
+      {
+        "content": "https://i.ibb.co/kGp0WPs/banner.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<section> atur warna background gray 50"
+      },
+      {
+        "rule": "<section> berikan padding vertikal 10 point"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "[Tugas dan Fungsi] Container",
+    "images": [
+      {
+        "content": "https://i.ibb.co/4VYRhqF/tugas-dan-fungsi.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<section> atur warna background white"
+      },
+      {
+        "rule": "<section> berikan padding vertikal 20 point"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "[Tugas dan Fungsi] Judul dan Paragraf",
+    "images": [
+      {
+        "content": "https://i.ibb.co/4VYRhqF/tugas-dan-fungsi.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<div> atur text center"
+      },
+      {
+        "rule": "<div> atur space horizontal 2 point"
+      },
+      {
+        "rule": "<h3> atur ukuran teks 3 xl dan font bold serta teks sky 600"
+      },
+      {
+        "rule": "<p> atur ukuran teks base dengan warna gray 700"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "[Tugas dan Fungsi] Daftar Tugas dan Fungsi",
+    "images": [
+      {
+        "content": "https://i.ibb.co/4VYRhqF/tugas-dan-fungsi.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<div> container atur div margin top 10 point"
+      },
+      {
+        "rule": "<div> item atur padding horizontal 3 point"
+      },
+      {
+        "rule": "<div> item atur padding vertikal 2 point"
+      },
+      {
+        "rule": "<div> item atur margin bottom 5 point"
+      },
+      {
+        "rule": "<div> icon warna text sky 600"
+      },
+      {
+        "rule": "<div> icon background gray 50"
+      },
+      {
+        "rule": "<div> icon background tinggi dan lebar 16 point rounded full"
+      },
+      {
+        "rule": "<div> icon size fa-2x"
+      },
+      {
+        "rule": "<h4> atur dengan font bold"
+      },
+      {
+        "rule": "<h4> atur dengan font size xl dan margin top 2 point"
+      },
+      {
+        "rule": "<p> atur ukuran text sm"
+      },
+      {
+        "rule": "<p> atur warna text gray 600 margin top 1 point"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "[Video] Video Bansos",
+    "images": [
+      {
+        "content": "https://i.ibb.co/4Mwy29f/video.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<section> atur warna background gray 50"
+      },
+      {
+        "rule": "<section> berikan padding vertikal 10 point"
+      },
+      {
+        "rule": "<iframe> atur lebar full dan tinggi 80 point"
+      },
+      {
+        "rule": "<h3> atur font bold dengan ukuran text 3xl serta warna sky 600"
+      },
+      {
+        "rule": "<p> atur warna teks gray 700 dan ukuran text sm"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "[Berita] Judul dan Paragraf",
+    "images": [
+      {
+        "content": "https://i.ibb.co/nwh0MJ0/berita.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<div> atur text center"
+      },
+      {
+        "rule": "<div> atur space horizontal 2 point"
+      },
+      {
+        "rule": "<h3> atur ukuran teks 3 xl dan font bold serta teks sky 600"
+      },
+      {
+        "rule": "<p> atur ukuran teks base dengan warna gray 700"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "[Berita] Content Berita",
+    "images": [
+      {
+        "content": "https://i.ibb.co/nwh0MJ0/berita.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [
+      {
+        "rule": "<div> atur lebar 1/3"
+      }
+    ],
+    "rulesMobile": [
+      {
+        "rule": "<div> atur lebar full"
+      }
+    ],
+    "rulesBoth": [
+      {
+        "rule": "<div> atur padding semua sisi 3 point"
+      },
+      {
+        "rule": "<img> atur rounded top extra large"
+      },
+      {
+        "rule": "<div> container atur border dengan warna gray 200"
+      },
+      {
+        "rule": "<div> container atur padding di semua sisi 4 point"
+      },
+      {
+        "rule": "<div> container atur rounded bottom extra large"
+      },
+      {
+        "rule": "<div> container atur space horizontal 2 point"
+      },
+      {
+        "rule": "<h4> atur font bold dan text large"
+      },
+      {
+        "rule": "<p> atur ukuran teks sm dan teks gray 700"
+      },
+      {
+        "rule": "<a> atur ukuran teks sm dan teks sky 600 hover teks sky 700"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "[Footer] Container dan Paragraf",
+    "images": [
+      {
+        "content": "https://i.ibb.co/3h6gVDN/footer.png"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<footer> atur padding vertikal 3 point"
+      },
+      {
+        "rule": "<footer> atur background gray 800"
+      },
+      {
+        "rule": "<footer> atur text white"
+      },
+      {
+        "rule": "<footer> atur text center"
+      },
+      {
+        "rule": "<footer> atur text xs"
+      },
+      {
+        "rule": "<a> atur menjadi font bold"
       }
     ]
   }

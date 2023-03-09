@@ -48,9 +48,9 @@ const Task = () => {
 
   useEffect(() => {
     axios.get('/tasks.json')
-    .then((res) => setTasks(res.data))
-    .catch(err => console.log(err));
-  });
+      .then((res) => setTasks(res.data))
+      .catch(err => console.log(err));
+  }, []);
 
   const changeShow = (task) => {
     setShow({
@@ -73,11 +73,11 @@ const Task = () => {
               <Link className='flex items-center gap-3'><span className='font-bold text-2xl'>Panduan</span></Link>
             </h1>
             <ul className='mt-5 space-y-5 text-sm text-slate-700 dark:text-slate-200'>
-              <li className='text-sky-500 font-medium' role='button'>Website Kemensos RI</li>
+              <li className='text-sky-500 font-medium' role='button'>TailwindCSS<br/>Website Kemensos RI</li>
               <li role='button'>Dashboard Kemensos RI</li>
             </ul>
           </div>
-          <div className='order-2 md:order-none basis-2/6 h-screen bg-slate-50 dark:bg-slate-700 rounded-3xl py-6 px-6 overflow-y-auto'>
+          <div className='order-2 md:order-none basis-2/6 bg-slate-50 dark:bg-slate-700 rounded-3xl py-6 px-6'>
             <ul className='space-y-1'>
               {
                 tasks.map((task, i) => {
@@ -106,67 +106,69 @@ const Task = () => {
             </ul>
           </div>
           <div className='order-1 md:order-none basis-3/6 space-y-5'>
-            <div className='space-y-8'>
-              {
-                show.images.map((image, i) => {
-                  return (
-                    <img src={image.content} alt='' className='rounded-lg border w-full' />
-                  )
-                })
-              }
-              <div className='space-y-2'>
-                <h1 className='text-slate-800 dark:text-slate-100 font-bold text-2xl'>{show.name}</h1>
-                <p className='text-slate-600 dark:text-slate-400 text-sm'>Buatlah komponen website kemensos RI menggunakan TailwindCSS dan HTML dengan panduan berikut ini:</p>
-              </div>
-              <div className='flex flex-wrap gap-3 text-slate-800'>
+            <div className='md:fixed md:bg-white md:h-[550px] md:overflow-y-auto  md:p-5 md:border rounded-xl'>
+              <div className='space-y-8'>
                 {
-                  show.rulesBoth.length > 0 &&
-                  <div className='w-full border bg-slate-50 inline-block p-3 rounded-lg text-sm space-y-2'>
-                    <span className='pl-3 block font-bold'><i class="fa-solid fa-mobile-screen mr-1"></i><i class="fa-solid fa-display mr-1"></i> Both:</span>
-                    <hr />
-                    <ul className='space-y-1 text-sm px-2'>
-                      {
-                        show.rulesBoth.map((ruleBoth, i) => {
-                          return (
-                            <li key={i}><i class="fa-solid fa-angle-right mr-1"></i> {ruleBoth.rule}</li>
-                          )
-                        })
-                      }
-                    </ul>
-                  </div>
+                  show.images.map((image, i) => {
+                    return (
+                      <img src={image.content} alt='' key={i} className='rounded-lg border w-full' />
+                    )
+                  })
                 }
-                {
-                  show.rulesDesktop.length > 0 &&
-                  <div className='w-full border bg-slate-50 md:inline-block p-3 rounded-lg text-sm space-y-2'>
-                    <span className='pl-3 block font-bold'><i class="fa-solid fa-display mr-1"></i> Desktop:</span>
-                    <hr />
-                    <ul className='space-y-1 text-sm px-2'>
-                      {
-                        show.rulesDesktop.map((ruleDesktop, i) => {
-                          return (
-                            <li key={i}><i class="fa-solid fa-angle-right mr-1"></i> {ruleDesktop.rule}</li>
-                          )
-                        })
-                      }
-                    </ul>
-                  </div>
-                }
-                {
-                  show.rulesMobile.length > 0 &&
-                  <div className='w-full border bg-slate-50 inline-block p-3 rounded-lg text-sm space-y-2'>
-                    <span className='pl-3 block font-bold'><i class="fa-solid fa-mobile-screen mr-1"></i> Mobile:</span>
-                    <hr />
-                    <ul className='space-y-1 text-sm px-2'>
-                      {
-                        show.rulesMobile.map((ruleMobile, i) => {
-                          return (
-                            <li key={i}><i class="fa-solid fa-angle-right mr-1"></i> {ruleMobile.rule}</li>
-                          )
-                        })
-                      }
-                    </ul>
-                  </div>
-                }
+                <div className='space-y-2'>
+                  <h1 className='text-slate-800 dark:text-slate-100 font-bold text-2xl'>{show.name}</h1>
+                  <p className='text-slate-600 dark:text-slate-400 text-sm'>Buatlah komponen website kemensos RI menggunakan TailwindCSS dan HTML dengan panduan berikut ini:</p>
+                </div>
+                <div className='flex flex-wrap gap-3 text-slate-800'>
+                  {
+                    show.rulesBoth.length > 0 &&
+                    <div className='w-full border bg-slate-50 inline-block p-3 rounded-lg text-sm space-y-2'>
+                      <span className='pl-3 block font-bold'><i class="fa-solid fa-mobile-screen mr-1"></i><i class="fa-solid fa-display mr-1"></i> Both:</span>
+                      <hr />
+                      <ul className='space-y-1 text-sm px-2'>
+                        {
+                          show.rulesBoth.map((ruleBoth, i) => {
+                            return (
+                              <li key={i}><i class="fa-solid fa-angle-right mr-1"></i> {ruleBoth.rule}</li>
+                            )
+                          })
+                        }
+                      </ul>
+                    </div>
+                  }
+                  {
+                    show.rulesDesktop.length > 0 &&
+                    <div className='w-full border bg-slate-50 md:inline-block p-3 rounded-lg text-sm space-y-2'>
+                      <span className='pl-3 block font-bold'><i class="fa-solid fa-display mr-1"></i> Desktop:</span>
+                      <hr />
+                      <ul className='space-y-1 text-sm px-2'>
+                        {
+                          show.rulesDesktop.map((ruleDesktop, i) => {
+                            return (
+                              <li key={i}><i class="fa-solid fa-angle-right mr-1"></i> {ruleDesktop.rule}</li>
+                            )
+                          })
+                        }
+                      </ul>
+                    </div>
+                  }
+                  {
+                    show.rulesMobile.length > 0 &&
+                    <div className='w-full border bg-slate-50 inline-block p-3 rounded-lg text-sm space-y-2'>
+                      <span className='pl-3 block font-bold'><i class="fa-solid fa-mobile-screen mr-1"></i> Mobile:</span>
+                      <hr />
+                      <ul className='space-y-1 text-sm px-2'>
+                        {
+                          show.rulesMobile.map((ruleMobile, i) => {
+                            return (
+                              <li key={i}><i class="fa-solid fa-angle-right mr-1"></i> {ruleMobile.rule}</li>
+                            )
+                          })
+                        }
+                      </ul>
+                    </div>
+                  }
+                </div>
               </div>
             </div>
           </div>
