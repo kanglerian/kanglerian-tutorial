@@ -667,5 +667,132 @@
         "rule": "<a> atur menjadi font bold"
       }
     ]
+  },
+  {
+    "id": 18,
+    "name": "[Jadwal] Container",
+    "images": [
+      {
+        "content": "https://i.ibb.co/7kF5Nzq/TV-1.jpg"
+      },
+      {
+        "content": "https://i.ibb.co/YX6qcqY/TV-2-1.jpg"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "padding vertikal 10 point"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "[Jadwal] Header & Paragraf",
+    "images": [
+      {
+        "content": "https://i.ibb.co/7kF5Nzq/TV-1.jpg"
+      },
+      {
+        "content": "https://i.ibb.co/YX6qcqY/TV-2-1.jpg"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<div> beri space vertikal 2 point"
+      },
+      {
+        "rule": "<h3> font bold dan ukuran text-3xl dengan warna biru sky 600"
+      },
+      {
+        "rule": "<p> ukuran teks base dengan warna gray 700"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "[Jadwal] Select Input",
+    "images": [
+      {
+        "content": "https://i.ibb.co/7kF5Nzq/TV-1.jpg"
+      },
+      {
+        "content": "https://i.ibb.co/YX6qcqY/TV-2-1.jpg"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<div> ukuran width full dengan background white ukuran teks sm"
+      },{
+        "rule": "<div> beri padding semua sisi 4 point"
+      },{
+        "rule": "<div> beri rounded extra large dan border serta space vertikal 2 point"
+      },{
+        "rule": "<div> pembungkus select beri gap 3 point"
+      },
+      {
+        "rule": "<select> beri border dengan warna gray 200 dan teks gray 800 rounded large text sm"
+      },
+      {
+        "rule": "<button> background warna sky 600 dan teks warna putih"
+      },
+      {
+        "rule": "<button> beri padding horizontal 5 point dan vertikal 2 point"
+      },
+      {
+        "rule": "<button> berikan rounded large"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "[Jadwal] Table",
+    "images": [
+      {
+        "content": "https://i.ibb.co/7kF5Nzq/TV-1.jpg"
+      },
+      {
+        "content": "https://i.ibb.co/YX6qcqY/TV-2-1.jpg"
+      }
+    ],
+    "karyawan": true,
+    "reguler": true,
+    "rulesDesktop": [],
+    "rulesMobile": [],
+    "rulesBoth": [
+      {
+        "rule": "<section> berikan background putih dan padding vertikal 10 point"
+      },{
+        "rule": "<div> beri padding horizontal 4 point"
+      },{
+        "rule": "<div> setting pembungkus table dengan position relative dan overflow x auto"
+      },
+      {
+        "rule": "<table> atur lebar full ukuran teks sm dan warna gray 600"
+      },
+      {
+        "rule": "<thead> warna teks gray 800 uppercase dan background gray 50"
+      },
+      {
+        "rule": "<th> <td> beri padding horizontal 6 point dan vertikal 3 point"
+      },
+      {
+        "rule": "<button> background emerald 500"
+      },
+      {
+        "rule": "<button> padding horizontal 4 point dan vertikal 1 point rounded teks putih"
+      }
+    ]
   }
 ]
